@@ -4,4 +4,6 @@
 
 $thi = 'this ';
 
+echo $thi;
+
 die();
