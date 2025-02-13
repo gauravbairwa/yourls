@@ -2,6 +2,6 @@
 
 
 
-
+$thi = 'this ';
 
 die();
