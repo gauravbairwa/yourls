@@ -15,15 +15,7 @@ $action = ( isset( $_REQUEST['action'] ) ? $_REQUEST['action'] : null );
 
 yourls_do_action( 'api', $action );
 
-// Define standard API actions
-$api_actions = array(
-	'shorturl'  => 'yourls_api_action_shorturl',
-	'stats'     => 'yourls_api_action_stats',
-	'db-stats'  => 'yourls_api_action_db_stats',
-	'url-stats' => 'yourls_api_action_url_stats',
-	'expand'    => 'yourls_api_action_expand',
-	'version'   => 'yourls_api_action_version',
-);
+
 $api_actions = yourls_apply_filter( 'api_actions', $api_actions );
 
 // Register API actions
