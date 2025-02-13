@@ -10,11 +10,6 @@ if( !isset( $keyword ) ) {
 
 $keyword = yourls_sanitize_keyword($keyword);
 
-// if we have a page, display and exit
-if( yourls_is_page($keyword) ) {
-    yourls_page( $keyword );
-    return;
-}
 
 // if we can get a long URL from the DB, redirect
 if( $url = yourls_get_keyword_longurl( $keyword ) ) {
